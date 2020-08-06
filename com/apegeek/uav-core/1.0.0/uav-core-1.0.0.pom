@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>uav-common</artifactId>
+        <groupId>com.apegeek</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <name>uav-core</name>
+    <artifactId>uav-core</artifactId>
+
+    <properties>
+        <shiro.version>1.4.0</shiro.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring-boot-web-starter</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-config-db</artifactId>
+            <version>${uav-module.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-config-web</artifactId>
+            <version>${uav-module.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-base</artifactId>
+            <version>${uav-module.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-cache</artifactId>
+            <version>${uav-module.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-mysterious</artifactId>
+            <version>${uav-module.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-lib</artifactId>
+            <version>${uav-module.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-dependencies-bigdata</artifactId>
+            <version>${uav-module.version}</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.ftl</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <compilerArgument>-Xlint:all</compilerArgument>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
