@@ -59,7 +59,7 @@
         <module>uav-cache</module>
         <module>uav-generator</module>
         <module>uav-bigdata</module>
-        <module>uav-wiki</module>
+<!--        <module>uav-wiki</module>-->
         <module>uav-ftp-proxy</module>
         <module>uav-base</module>
         <module>uav-mysterious</module>

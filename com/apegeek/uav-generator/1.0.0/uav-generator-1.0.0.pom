@@ -45,12 +45,6 @@
             <version>${uav-module.version}</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.apegeek</groupId>-->
-<!--            <artifactId>uav-entities</artifactId>-->
-<!--            <version>${uav-module.version}</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>org.mybatis.generator</groupId>
             <artifactId>mybatis-generator-core</artifactId>
