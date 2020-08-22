@@ -121,6 +121,7 @@
             <artifactId>jodd</artifactId>
             <version>${jodd.version}</version>
         </dependency>
+
     </dependencies>
 
     <distributionManagement>
