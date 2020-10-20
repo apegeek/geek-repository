@@ -14,7 +14,7 @@
 
     <modules>
         <module>uav-hbase-starter</module>
-        <module>uav-bigdata-test</module>
+<!--        <module>uav-bigdata-test</module>-->
     </modules>
 
 
