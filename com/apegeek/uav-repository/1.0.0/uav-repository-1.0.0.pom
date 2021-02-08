@@ -51,12 +51,6 @@
         </repository>
 
         <repository>
-            <id>apegeek</id>
-            <name>apegeek</name>
-            <url>https://raw.githubusercontent.com/apegeek/uav-repository/master/</url>
-        </repository>
-
-        <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/libs-milestone</url>
