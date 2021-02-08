@@ -26,6 +26,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-lib</artifactId>
+            <version>${uav-module.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>

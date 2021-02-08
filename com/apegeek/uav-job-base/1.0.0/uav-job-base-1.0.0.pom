@@ -11,7 +11,7 @@
     <artifactId>uav-job-base</artifactId>
 
     <properties>
-        <xxl-job.version>2.2.1-SNAPSHOT</xxl-job.version>
+        <xxl-job.version>2.2.1</xxl-job.version>
     </properties>
 
     <dependencies>
