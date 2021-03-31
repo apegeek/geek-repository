@@ -48,7 +48,6 @@
     </repositories>
 
     <modules>
-        <module>uav-activity</module>
         <module>uav-config-db</module>
         <module>uav-config-web</module>
         <module>uav-metrics</module>

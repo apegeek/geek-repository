@@ -21,7 +21,7 @@
         <zookeeper.version>3.4.6</zookeeper.version>
         <kafka.version>1.1.0</kafka.version>
         <kafka-clients.version>1.1.0</kafka-clients.version>
-        <spring-kafka.version>2.1.8.RELEASE</spring-kafka.version>
+        <spring.kafka.version>2.1.8.RELEASE</spring.kafka.version>
         <logback-kafka-appender.version>0.2.0-RC2</logback-kafka-appender.version>
     </properties>
 
@@ -36,7 +36,7 @@
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
-            <version>${spring-kafka.version}</version>
+            <version>${spring.kafka.version}</version>
         </dependency>
 
         <dependency>
@@ -80,6 +80,10 @@
                 <exclusion>
                     <artifactId>netty</artifactId>
                     <groupId>io.netty</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>junit</artifactId>
+                    <groupId>junit</groupId>
                 </exclusion>
             </exclusions>
         </dependency>
