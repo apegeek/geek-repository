@@ -20,7 +20,7 @@
         <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <commons-io.version>2.5</commons-io.version>
         <commons-collections.version>3.2.1</commons-collections.version>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.7.1</shiro.version>
         <httpclient.version>4.5.6</httpclient.version>
 
     </properties>

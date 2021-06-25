@@ -72,6 +72,7 @@
         <module>uav-api-admin</module>
         <module>uav-auth</module>
         <module>uav-api-sdk</module>
+        <module>uav-pki</module>
     </modules>
 
     <dependencies>
