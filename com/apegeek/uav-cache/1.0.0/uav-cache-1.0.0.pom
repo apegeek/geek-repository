@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>uav-cache</artifactId>
-
     <distributionManagement>
         <repository>
             <id>releases</id>
@@ -28,7 +27,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
+            <version>${fastjson.version}</version>
         </dependency>
 
         <dependency>
