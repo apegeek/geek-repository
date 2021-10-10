@@ -24,7 +24,7 @@
         <maven-compiler.version>3.7.0</maven-compiler.version>
         <uav-module.version>1.0.0</uav-module.version>
         <lombok.version>1.18.8</lombok.version>
-
+        <fastjson.version>1.2.73</fastjson.version>
         <repository.url.releases>http://172.18.1.34:8081/content/repositories/releases/</repository.url.releases>
         <repository.url.snapshots>http://172.18.1.34:8081/content/repositories/snapshots/</repository.url.snapshots>
     </properties>

@@ -24,25 +24,7 @@
 
         <dependency>
             <groupId>com.apegeek</groupId>
-            <artifactId>uav-config-db</artifactId>
-            <version>${uav-module.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.apegeek</groupId>
             <artifactId>uav-config-web</artifactId>
-            <version>${uav-module.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.apegeek</groupId>
-            <artifactId>uav-base</artifactId>
-            <version>${uav-module.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.apegeek</groupId>
-            <artifactId>uav-cache</artifactId>
             <version>${uav-module.version}</version>
         </dependency>
 

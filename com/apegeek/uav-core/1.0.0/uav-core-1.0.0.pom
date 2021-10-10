@@ -11,6 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <name>uav-core</name>
     <artifactId>uav-core</artifactId>
+    <version>1.0.0</version>
 
     <properties>
         <shiro.version>1.7.1</shiro.version>

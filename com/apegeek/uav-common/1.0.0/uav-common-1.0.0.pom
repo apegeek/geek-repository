@@ -70,9 +70,8 @@
         <module>uav-dev</module>
         <module>uav-protocol-core</module>
         <module>uav-api-admin</module>
-        <module>uav-auth</module>
+<!--        <module>uav-auth</module>-->
         <module>uav-api-sdk</module>
-        <module>uav-pki</module>
     </modules>
 
     <dependencies>
@@ -101,12 +100,12 @@
     <distributionManagement>
         <repository>
             <id>releases</id>
-            <name>Internal Releases</name>
+            <name>Releases Repository</name>
             <url>${repository.url.releases}</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
-            <name>snapshots</name>
+            <name>Snapshots Repository</name>
             <url>${repository.url.snapshots}</url>
         </snapshotRepository>
     </distributionManagement>

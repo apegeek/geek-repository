@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.apegeek</groupId>
     <artifactId>uav-lib</artifactId>
-    <version>${uav-module.version}</version>
+    <version>1.0.0</version>
 
     <properties>
         <jedis.version>2.9.0</jedis.version>
@@ -22,6 +22,7 @@
         <commons-collections.version>3.2.1</commons-collections.version>
         <shiro.version>1.7.1</shiro.version>
         <httpclient.version>4.5.6</httpclient.version>
+        <fastjson.version>1.2.73</fastjson.version>
 
     </properties>
 
@@ -40,6 +41,11 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -145,14 +151,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.0.4.RELEASE</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 </project>
