@@ -66,6 +66,7 @@
         <module>uav-core</module>
         <module>uav-stream</module>
         <module>uav-job-base</module>
+        <module>uav-mail</module>
 <!--        <module>uav-protocol</module>-->
         <module>uav-dev</module>
         <module>uav-protocol-core</module>

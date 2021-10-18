@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>uav-dependencies</artifactId>
+        <groupId>com.apegeek</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.apegeek</groupId>
+    <artifactId>uav-lib</artifactId>
+    <version>1.0.1</version>
+
+    <properties>
+        <jedis.version>2.9.0</jedis.version>
+        <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
+        <commons-lang3.version>3.4</commons-lang3.version>
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <commons-io.version>2.5</commons-io.version>
+        <commons-collections.version>3.2.1</commons-collections.version>
+        <shiro.version>1.7.1</shiro.version>
+        <httpclient.version>4.5.6</httpclient.version>
+        <fastjson.version>1.2.73</fastjson.version>
+
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>${repository.url.releases}</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>snapshots</name>
+            <url>${repository.url.snapshots}</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpmime</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
+            <artifactId>uav-dependencies-base</artifactId>
+            <version>1.0.0</version>
+            <type>pom</type>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>redis.clients</groupId>-->
+<!--            <artifactId>jedis</artifactId>-->
+<!--            <version>${jedis.version}</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons-collections.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons-beanutils.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.54</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet-api.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <compilerArgument>-Xlint:all</compilerArgument>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
