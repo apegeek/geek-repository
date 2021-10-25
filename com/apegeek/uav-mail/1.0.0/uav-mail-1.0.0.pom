@@ -11,7 +11,7 @@
 
     <artifactId>uav-mail</artifactId>
     <name>uav-mail</name>
-    <version>${uav-module.version}</version>
+    <version>1.0.0</version>
 
     <properties>
         <shell.dir>${project.build.directory}/shell</shell.dir>
