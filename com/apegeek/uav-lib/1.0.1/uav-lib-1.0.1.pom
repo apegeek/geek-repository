@@ -8,6 +8,7 @@
         <groupId>com.apegeek</groupId>
         <version>1.0.0</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.apegeek</groupId>
     <artifactId>uav-lib</artifactId>
@@ -40,6 +41,12 @@
     </distributionManagement>
 
     <dependencies>
+
+<!--        <dependency>-->
+<!--            <groupId>cn.hutool</groupId>-->
+<!--            <artifactId>hutool-crypto</artifactId>-->
+<!--            <version>5.5.2</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>com.alibaba</groupId>
