@@ -39,6 +39,12 @@
 
         <dependency>
             <groupId>com.apegeek</groupId>
+            <artifactId>uav-mail</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.apegeek</groupId>
             <artifactId>uav-config-web</artifactId>
             <version>${uav-module.version}</version>
         </dependency>
